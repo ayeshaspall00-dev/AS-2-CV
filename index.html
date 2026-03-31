@@ -1,123 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Ayesha Noor - CV</title>
-    <style>
-        /* This section defines the background and page design */
-        body {
-            background-color: #f0f2f5; /* Light grey outer background to make the CV pop */
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 40px;
-            display: flex;
-            justify-content: center;
-        }
+<meta charset="UTF-8">
+<title>Ayesha Noor CV</title>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
 
-        .cv-page {
-            background-color: #ffffff; /* Exact white background as per the PDF */
-            width: 210mm; /* Standard A4 width */
-            min-height: 297mm;
-            padding: 50px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.1);
-            box-sizing: border-box;
-            color: #000;
-        }
+.container {
+    width: 900px;
+    margin: 20px auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
 
-        /* Typography and Spacing following the PDF structure */
-        .name { font-size: 26pt; font-weight: bold; margin: 0; }
-        .sub-name { font-size: 14pt; margin-bottom: 10px; }
-        .contact { font-size: 10pt; margin-bottom: 20px; border-bottom: 1px solid #000; padding-bottom: 10px; }
-        
-        .section-header { 
-            font-weight: bold; 
-            font-size: 12pt; 
-            text-transform: uppercase; 
-            margin-top: 20px; 
-            margin-bottom: 5px;
-            border-bottom: 1px solid #000;
-        }
+/* HEADER */
+.header {
+    background: #2f3e52;
+    color: white;
+    padding: 20px 30px;
+}
 
-        .content-item { margin-bottom: 15px; font-size: 10.5pt; }
-        .bold { font-weight: bold; }
-        ul { margin: 5px 0 10px 20px; padding: 0; }
-        li { margin-bottom: 3px; }
+.header h1 {
+    margin: 0;
+    font-size: 28px;
+}
 
-        @media print {
-            body { background: none; padding: 0; }
-            .cv-page { box-shadow: none; margin: 0; width: 100%; }
-        }
-    </style>
+.header h2 {
+    margin: 5px 0;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.header p {
+    margin-top: 10px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* CONTACT BAR */
+.contact {
+    background: #d5d8dd;
+    padding: 10px 30px;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* MAIN LAYOUT */
+.main {
+    display: flex;
+    padding: 20px 30px;
+}
+
+.left {
+    width: 60%;
+    padding-right: 20px;
+}
+
+.right {
+    width: 40%;
+}
+
+/* SECTION TITLES */
+.section-title {
+    color: #2b7a78;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #2b7a78;
+    display: inline-block;
+    padding-bottom: 3px;
+}
+
+/* TEXT */
+.item-title {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.sub {
+    font-size: 13px;
+    color: #555;
+}
+
+.desc {
+    font-size: 12px;
+    color: #777;
+    font-style: italic;
+    margin-bottom: 8px;
+}
+
+/* SKILLS TAGS */
+.tag {
+    display: inline-block;
+    background: #cfd6df;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    margin: 3px;
+}
+
+/* INTEREST TAGS */
+.tag-outline {
+    display: inline-block;
+    border: 1px solid #999;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    margin: 3px;
+}
+</style>
 </head>
+
 <body>
 
-<div class="cv-page">
-    <div class="name">Ayesha Noor</div> [cite: 1]
-    <div class="sub-name">AI Undergraduate</div> [cite: 2]
+<div class="container">
+
+    <div class="header">
+        <h1>Ayesha Noor</h1>
+        <h2>AI Undergraduate</h2>
+        <p>
+            AI student passionate about machine learning and building intelligent systems, 
+            seeking opportunities to apply technical skills and grow in a professional environment.
+        </p>
+    </div>
+
     <div class="contact">
-        23003376048@skt.umt.edu.pk | 03320480355 | Sialkot, Pakistan [cite: 4, 6, 7]
+        <div>23003376048@sk.utemt.edu.pk</div>
+        <div>03320480355</div>
+        <div>Sialkot , Pakistan</div>
     </div>
 
-    <div class="content-item">
-        AI student passionate about machine learning and building intelligent systems, seeking opportunities to apply technical skills and grow in a professional environment. [cite: 3]
+    <div class="main">
+
+        <!-- LEFT -->
+        <div class="left">
+
+            <div class="section-title">RELEVANT EXPERIENCE</div>
+
+            <div class="item-title">AI & Automation Projects</div>
+            <div class="sub">Academic & Self-Initiated Work</div>
+            <div class="desc">Developed AI chatbot for medical queries using NLP techniques</div>
+            <div class="desc">Built AI-based email generator for automated responses</div>
+
+            <div class="item-title">Programming & System Development</div>
+            <div class="sub">University Projects</div>
+            <div class="desc">
+                Designed a restaurant management system using C++ with object-oriented programming principles
+            </div>
+
+            <div class="section-title">PROJECTS</div>
+
+            <div class="item-title">AI Chatbot for Medical Queries</div>
+            <div class="sub">AI Developer</div>
+            <div class="desc">Developed a chatbot providing symptom-based guidance</div>
+            <div class="desc">Used structured datasets and basic NLP techniques</div>
+
+            <div class="item-title">Restaurant Management System (C++)</div>
+            <div class="sub">C++ Developer</div>
+            <div class="desc">Built an OOP-based system for order and billing management</div>
+            <div class="desc">Applied structured programming and data handling</div>
+
+            <div class="item-title">AI Email Generator</div>
+            <div class="sub">AI Developer</div>
+            <div class="desc">Created an automated email generation system using ML concepts</div>
+            <div class="desc">Generated context-based responses to reduce manual effort</div>
+
+            <div class="section-title">EDUCATION</div>
+
+            <div class="item-title">BS Artificial Intelligence</div>
+            <div class="sub">University of Management and Technology</div>
+
+            <div class="item-title">FSc (Pre-Medical)</div>
+            <div class="sub">Punjab Group of Colleges</div>
+
+        </div>
+
+        <!-- RIGHT -->
+        <div class="right">
+
+            <div class="section-title">SKILLS</div>
+            <div class="tag">Python</div>
+            <div class="tag">C++</div>
+            <div class="tag">Machine Learning (Basics)</div>
+            <div class="tag">Problem Solving</div>
+            <div class="tag">Communication & Teamwork</div>
+
+            <div class="section-title">CERTIFICATES</div>
+            <div class="item-title">AI Fundamentals</div>
+            <div class="sub">Google</div>
+
+            <div class="item-title">CS50x</div>
+            <div class="sub">Harvard University</div>
+
+            <div class="item-title">OEC & ICMPD</div>
+            <div class="sub">Soft Skills Training</div>
+
+            <div class="section-title">LANGUAGES</div>
+            <div class="item-title">English</div>
+            <div class="desc">Professional Working Proficiency</div>
+
+            <div class="section-title">INTERESTS</div>
+            <div class="tag-outline">Artificial Intelligence</div>
+            <div class="tag-outline">Automation</div>
+            <div class="tag-outline">Problem Solving</div>
+            <div class="tag-outline">Emerging Technologies</div>
+
+        </div>
+
     </div>
 
-    <div class="section-header">RELEVANT EXPERIENCE</div> [cite: 8]
-    <div class="content-item">
-        <div class="bold">AI & Automation Projects</div> [cite: 9]
-        <div>Academic & Self-Initiated Work</div> [cite: 10]
-        <ul>
-            <li>Developed AI chatbot for medical queries using NLP techniques [cite: 11]</li>
-            <li>Built AI-based email generator for automated responses [cite: 12]</li>
-        </ul>
-    </div>
-
-    <div class="section-header">PROJECTS</div> [cite: 16]
-    <div class="content-item">
-        <div class="bold">AI Chatbot for Medical Queries</div> [cite: 17]
-        <div class="bold">AI Developer</div> [cite: 18]
-        <ul>
-            <li>Developed a chatbot providing symptom-based guidance [cite: 19]</li>
-            <li>Used structured datasets and basic NLP techniques [cite: 19]</li>
-        </ul>
-    </div>
-
-    <div class="content-item">
-        <div class="bold">Restaurant Management System (C++)</div> [cite: 20]
-        <div class="bold">C++ Developer</div> [cite: 20]
-        <ul>
-            <li>Built an OOP-based system for order and billing management [cite: 21]</li>
-            <li>Applied structured programming and data handling [cite: 22]</li>
-        </ul>
-    </div>
-
-    <div class="section-header">EDUCATION</div> [cite: 27]
-    <div class="content-item">
-        <div class="bold">BS Artificial Intelligence</div> [cite: 28]
-        <div>University of Management and Technology</div> [cite: 29]
-    </div>
-    <div class="content-item">
-        <div class="bold">FSc (Pre-Medical)</div> [cite: 30]
-        <div>Punjab Group of Colleges</div> [cite: 31]
-    </div>
-
-    <div class="section-header">SKILLS</div> [cite: 32]
-    <div class="content-item">
-        Python, C++, Machine Learning (Basics), Problem Solving, Communication & Teamwork [cite: 33, 34, 35, 36, 37]
-    </div>
-
-    <div class="section-header">CERTIFICATES</div> [cite: 38]
-    <div class="content-item">
-        • AI Fundamentals (Google) [cite: 39, 40]<br>
-        • CS50x (Harvard University) [cite: 41, 42]<br>
-        • Soft Skills Training (OEC & ICMPD) [cite: 43, 44]
-    </div>
-
-    <div class="section-header">LANGUAGES</div> [cite: 45]
-    <div class="content-item">English (Professional Working Proficiency) [cite: 46, 47, 48]</div>
-
-    <div class="section-header">INTERESTS</div> [cite: 49]
-    <div class="content-item">Artificial Intelligence, Automation, Problem Solving, Emerging Technologies [cite: 50, 51, 52]</div>
 </div>
 
 </body>
