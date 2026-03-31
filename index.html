@@ -2,213 +2,276 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ayesha Noor CV</title>
+
 <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
+* {
+    box-sizing: border-box;
 }
 
-.container {
-    width: 900px;
-    margin: 20px auto;
-    background: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+body {
+    margin: 0;
+    background: #eef1f5;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    color: #1f2b38;
+}
+
+.cv-page {
+    width: 647px;
+    margin: 0 auto;
+    background: #ffffff;
 }
 
 /* HEADER */
-.header {
-    background: #2f3e52;
-    color: white;
-    padding: 20px 30px;
+.top-header {
+    background: #2f3f56;
+    color: #ffffff;
+    padding: 22px 26px 14px;
 }
 
-.header h1 {
+.top-header h1 {
     margin: 0;
-    font-size: 28px;
+    font-size: 19px;
+    font-weight: 700;
 }
 
-.header h2 {
-    margin: 5px 0;
-    font-weight: normal;
-    font-size: 16px;
-}
-
-.header p {
-    margin-top: 10px;
+.role {
     font-size: 13px;
-    line-height: 1.5;
+    margin-top: 2px;
 }
 
-/* CONTACT BAR */
-.contact {
-    background: #d5d8dd;
-    padding: 10px 30px;
-    font-size: 13px;
+.summary {
+    font-size: 11px;
+    margin-top: 8px;
+    line-height: 1.4;
+}
+
+/* CONTACT */
+.contact-bar {
+    background: #d2d6dc;
+    height: 36px;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 11px;
+    color: #5d6875;
 }
 
-/* MAIN LAYOUT */
-.main {
-    display: flex;
-    padding: 20px 30px;
+/* MAIN */
+.content {
+    display: grid;
+    grid-template-columns: 1fr 0.9fr;
+    gap: 34px;
+    padding: 20px 26px;
 }
 
-.left {
-    width: 60%;
-    padding-right: 20px;
+/* SECTION */
+.section {
+    margin-bottom: 18px;
 }
 
-.right {
-    width: 40%;
-}
-
-/* SECTION TITLES */
 .section-title {
-    color: #2b7a78;
-    font-weight: bold;
-    margin-top: 20px;
+    display: block;
+    width: fit-content;
     margin-bottom: 10px;
-    border-bottom: 2px solid #2b7a78;
-    display: inline-block;
-    padding-bottom: 3px;
+    padding-bottom: 2px;
+    border-bottom: 3px solid #2d8f96;
+    color: #2d8f96;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 /* TEXT */
-.item-title {
-    font-weight: bold;
-    margin-top: 10px;
+.entry {
+    margin-bottom: 10px;
 }
 
-.sub {
-    font-size: 13px;
-    color: #555;
-}
-
-.desc {
+.entry-title {
     font-size: 12px;
-    color: #777;
+    font-weight: 700;
+}
+
+.entry-subtitle {
+    font-size: 11px;
+    color: #3b4d63;
+}
+
+.entry-desc {
+    font-size: 10px;
+    color: #8d939b;
     font-style: italic;
-    margin-bottom: 8px;
 }
 
-/* SKILLS TAGS */
-.tag {
-    display: inline-block;
-    background: #cfd6df;
-    padding: 5px 10px;
-    border-radius: 6px;
-    font-size: 12px;
-    margin: 3px;
+/* TAGS */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
 }
 
-/* INTEREST TAGS */
-.tag-outline {
-    display: inline-block;
-    border: 1px solid #999;
-    padding: 5px 10px;
-    border-radius: 6px;
-    font-size: 12px;
-    margin: 3px;
+.skill-tag {
+    background: #cfd6e2;
+    padding: 4px 9px;
+    border-radius: 4px;
+    font-size: 11px;
+}
+
+.interest-tag {
+    border: 1px solid #8e98a3;
+    padding: 4px 9px;
+    border-radius: 4px;
+    font-size: 11px;
+}
+
+.language-note {
+    font-size: 10px;
+    color: #9aa1aa;
+    font-style: italic;
 }
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<div class="cv-page">
 
-    <div class="header">
+    <!-- HEADER -->
+    <div class="top-header">
         <h1>Ayesha Noor</h1>
-        <h2>AI Undergraduate</h2>
-        <p>
-            AI student passionate about machine learning and building intelligent systems, 
+        <div class="role">AI Undergraduate</div>
+        <div class="summary">
+            AI student passionate about machine learning and building intelligent systems,
             seeking opportunities to apply technical skills and grow in a professional environment.
-        </p>
+        </div>
     </div>
 
-    <div class="contact">
-        <div>23003376048@sk.utemt.edu.pk</div>
-        <div>03320480355</div>
-        <div>Sialkot , Pakistan</div>
+    <!-- CONTACT -->
+    <div class="contact-bar">
+        <div>✉ 23003376048@sk.utemt.edu.pk</div>
+        <div>📱 03320480355</div>
+        <div>⌖ Sialkot , Pakistan</div>
     </div>
 
-    <div class="main">
+    <!-- CONTENT -->
+    <div class="content">
 
         <!-- LEFT -->
-        <div class="left">
+        <div>
 
-            <div class="section-title">RELEVANT EXPERIENCE</div>
+            <div class="section">
+                <div class="section-title">RELEVANT EXPERIENCE</div>
 
-            <div class="item-title">AI & Automation Projects</div>
-            <div class="sub">Academic & Self-Initiated Work</div>
-            <div class="desc">Developed AI chatbot for medical queries using NLP techniques</div>
-            <div class="desc">Built AI-based email generator for automated responses</div>
+                <div class="entry">
+                    <div class="entry-title">AI & Automation Projects</div>
+                    <div class="entry-subtitle">Academic & Self-Initiated Work</div>
+                    <div class="entry-desc">Developed AI chatbot for medical queries using NLP techniques</div>
+                    <div class="entry-desc">Built AI-based email generator for automated responses</div>
+                </div>
 
-            <div class="item-title">Programming & System Development</div>
-            <div class="sub">University Projects</div>
-            <div class="desc">
-                Designed a restaurant management system using C++ with object-oriented programming principles
+                <div class="entry">
+                    <div class="entry-title">Programming & System Development</div>
+                    <div class="entry-subtitle">University Projects</div>
+                    <div class="entry-desc">Designed a restaurant management system using C++ with object-oriented programming principles</div>
+                </div>
             </div>
 
-            <div class="section-title">PROJECTS</div>
+            <div class="section">
+                <div class="section-title">PROJECTS</div>
 
-            <div class="item-title">AI Chatbot for Medical Queries</div>
-            <div class="sub">AI Developer</div>
-            <div class="desc">Developed a chatbot providing symptom-based guidance</div>
-            <div class="desc">Used structured datasets and basic NLP techniques</div>
+                <div class="entry">
+                    <div class="entry-title">AI Chatbot for Medical Queries</div>
+                    <div class="entry-subtitle">AI Developer</div>
+                    <div class="entry-desc">Developed a chatbot providing symptom-based guidance</div>
+                    <div class="entry-desc">Used structured datasets and basic NLP techniques</div>
+                </div>
 
-            <div class="item-title">Restaurant Management System (C++)</div>
-            <div class="sub">C++ Developer</div>
-            <div class="desc">Built an OOP-based system for order and billing management</div>
-            <div class="desc">Applied structured programming and data handling</div>
+                <div class="entry">
+                    <div class="entry-title">Restaurant Management System (C++)</div>
+                    <div class="entry-subtitle">C++ Developer</div>
+                    <div class="entry-desc">Built an OOP-based system for order and billing management</div>
+                    <div class="entry-desc">Applied structured programming and data handling</div>
+                </div>
 
-            <div class="item-title">AI Email Generator</div>
-            <div class="sub">AI Developer</div>
-            <div class="desc">Created an automated email generation system using ML concepts</div>
-            <div class="desc">Generated context-based responses to reduce manual effort</div>
+                <div class="entry">
+                    <div class="entry-title">AI Email Generator</div>
+                    <div class="entry-subtitle">AI Developer</div>
+                    <div class="entry-desc">Created an automated email generation system using ML concepts</div>
+                    <div class="entry-desc">Generated context-based responses to reduce manual effort</div>
+                </div>
+            </div>
 
-            <div class="section-title">EDUCATION</div>
+            <div class="section">
+                <div class="section-title">EDUCATION</div>
 
-            <div class="item-title">BS Artificial Intelligence</div>
-            <div class="sub">University of Management and Technology</div>
+                <div class="entry">
+                    <div class="entry-title">BS Artificial Intelligence</div>
+                    <div class="entry-subtitle">University of Management and Technology</div>
+                </div>
 
-            <div class="item-title">FSc (Pre-Medical)</div>
-            <div class="sub">Punjab Group of Colleges</div>
+                <div class="entry">
+                    <div class="entry-title">FSc (Pre-Medical)</div>
+                    <div class="entry-subtitle">Punjab Group of Colleges</div>
+                </div>
+            </div>
 
         </div>
 
         <!-- RIGHT -->
-        <div class="right">
+        <div>
 
-            <div class="section-title">SKILLS</div>
-            <div class="tag">Python</div>
-            <div class="tag">C++</div>
-            <div class="tag">Machine Learning (Basics)</div>
-            <div class="tag">Problem Solving</div>
-            <div class="tag">Communication & Teamwork</div>
+            <div class="section">
+                <div class="section-title">SKILLS</div>
+                <div class="tags">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">Machine Learning (Basics)</span>
+                    <span class="skill-tag">Problem Solving</span>
+                    <span class="skill-tag">Communication & Teamwork</span>
+                </div>
+            </div>
 
-            <div class="section-title">CERTIFICATES</div>
-            <div class="item-title">AI Fundamentals</div>
-            <div class="sub">Google</div>
+            <div class="section">
+                <div class="section-title">CERTIFICATES</div>
 
-            <div class="item-title">CS50x</div>
-            <div class="sub">Harvard University</div>
+                <div class="entry">
+                    <div class="entry-title">AI Fundamentals</div>
+                    <div class="entry-subtitle">Google</div>
+                </div>
 
-            <div class="item-title">OEC & ICMPD</div>
-            <div class="sub">Soft Skills Training</div>
+                <div class="entry">
+                    <div class="entry-title">CS50x</div>
+                    <div class="entry-subtitle">Harvard University</div>
+                </div>
 
-            <div class="section-title">LANGUAGES</div>
-            <div class="item-title">English</div>
-            <div class="desc">Professional Working Proficiency</div>
+                <div class="entry">
+                    <div class="entry-title">OEC & ICMPD</div>
+                    <div class="entry-subtitle">Soft Skills Training</div>
+                </div>
+            </div>
 
-            <div class="section-title">INTERESTS</div>
-            <div class="tag-outline">Artificial Intelligence</div>
-            <div class="tag-outline">Automation</div>
-            <div class="tag-outline">Problem Solving</div>
-            <div class="tag-outline">Emerging Technologies</div>
+            <div class="section">
+                <div class="section-title">LANGUAGES</div>
+
+                <div class="entry">
+                    <div class="entry-title">English</div>
+                    <div class="language-note">Professional</div>
+                    <div class="language-note">Working</div>
+                    <div class="language-note">Proficiency</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">INTERESTS</div>
+                <div class="tags">
+                    <span class="interest-tag">Artificial Intelligence</span>
+                    <span class="interest-tag">Automation</span>
+                    <span class="interest-tag">Problem Solving</span>
+                    <span class="interest-tag">Emerging Technologies</span>
+                </div>
+            </div>
 
         </div>
 
