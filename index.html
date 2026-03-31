@@ -2,107 +2,33 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Ayesha Noor CV</title>
+<title>Exact CV</title>
 
 <style>
 body {
     margin: 0;
-    padding: 0;
     background: #e5e5e5;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* A4 Page */
+/* A4 container */
 .page {
     width: 210mm;
-    min-height: 297mm;
+    height: 297mm;
     margin: 20px auto;
-    background: #ffffff;
-    padding: 35px 45px;
-    box-sizing: border-box;
-    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    position: relative;
+    background: url('cv-bg.png') no-repeat center;
+    background-size: 100% 100%;
 }
 
-/* Header */
-h1 {
-    font-size: 26px;
-    margin: 0;
-    font-weight: 700;
-}
-
-.subtitle {
-    font-size: 13px;
-    color: #444;
-    margin-top: 2px;
-}
-
-.summary {
-    font-size: 12px;
-    margin-top: 10px;
-    line-height: 1.5;
-    color: #333;
-}
-
-.contact {
-    font-size: 11.5px;
-    margin-top: 10px;
-    color: #333;
-}
-
-/* Sections */
-.section {
-    margin-top: 18px;
-}
-
-.section-title {
-    font-size: 13px;
-    font-weight: bold;
-    border-bottom: 1px solid #000;
-    padding-bottom: 3px;
-    margin-bottom: 8px;
-    text-transform: uppercase;
-}
-
-/* Items */
-.item {
-    margin-bottom: 10px;
-}
-
-.item-title {
-    font-weight: bold;
-    font-size: 12.5px;
-}
-
-.item-sub {
-    font-size: 11.5px;
-    color: #555;
-}
-
-.item-desc {
-    font-size: 11.5px;
-    line-height: 1.4;
-    margin-top: 2px;
-}
-
-/* Lists */
-ul {
-    margin: 5px 0;
-    padding-left: 16px;
-}
-
-li {
-    font-size: 11.5px;
-    margin-bottom: 3px;
-}
-
-/* Two Column Bottom */
-.flex {
-    display: flex;
-    gap: 25px;
-}
-
-.col {
-    width: 50%;
+/* Optional invisible text layer (for selection/search) */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: transparent; /* invisible but selectable */
+    font-family: Arial;
 }
 </style>
 
@@ -111,132 +37,11 @@ li {
 <body>
 
 <div class="page">
-
-    <!-- HEADER -->
-    <h1>Ayesha Noor</h1>
-    <div class="subtitle">AI Undergraduate</div>
-
-    <div class="summary">
-        AI student passionate about machine learning and building intelligent systems, seeking opportunities to
-        apply technical skills and grow in a professional environment.
+    <div class="overlay">
+        Ayesha Noor
+        AI Undergraduate
+        AI student passionate about machine learning...
     </div>
-
-    <div class="contact">
-        23003376048@skt.umt.edu.pk | 03320480355 | Sialkot, Pakistan
-    </div>
-
-    <!-- EXPERIENCE -->
-    <div class="section">
-        <div class="section-title">Relevant Experience</div>
-
-        <div class="item">
-            <div class="item-title">AI & Automation Projects</div>
-            <div class="item-sub">Academic & Self-Initiated Work</div>
-            <ul>
-                <li>Developed AI chatbot for medical queries using NLP techniques</li>
-                <li>Built AI-based email generator for automated responses</li>
-            </ul>
-        </div>
-
-        <div class="item">
-            <div class="item-title">Programming & System Development</div>
-            <div class="item-sub">University Projects</div>
-            <ul>
-                <li>Designed a restaurant management system using C++ with object-oriented programming principles</li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- PROJECTS -->
-    <div class="section">
-        <div class="section-title">Projects</div>
-
-        <div class="item">
-            <div class="item-title">AI Chatbot for Medical Queries</div>
-            <div class="item-sub">AI Developer</div>
-            <div class="item-desc">
-                Developed a chatbot providing symptom-based guidance using structured datasets and basic NLP techniques
-            </div>
-        </div>
-
-        <div class="item">
-            <div class="item-title">Restaurant Management System (C++)</div>
-            <div class="item-sub">C++ Developer</div>
-            <div class="item-desc">
-                Built an OOP-based system for order and billing management with structured programming and data handling
-            </div>
-        </div>
-
-        <div class="item">
-            <div class="item-title">AI Email Generator</div>
-            <div class="item-sub">AI Developer</div>
-            <div class="item-desc">
-                Created an automated email generation system using ML concepts to generate context-based responses
-            </div>
-        </div>
-    </div>
-
-    <!-- EDUCATION -->
-    <div class="section">
-        <div class="section-title">Education</div>
-
-        <div class="item">
-            <div class="item-title">BS Artificial Intelligence</div>
-            <div class="item-sub">University of Management and Technology</div>
-        </div>
-
-        <div class="item">
-            <div class="item-title">FSc (Pre-Medical)</div>
-            <div class="item-sub">Punjab Group of Colleges</div>
-        </div>
-    </div>
-
-    <!-- BOTTOM COLUMNS -->
-    <div class="flex">
-
-        <div class="col">
-            <div class="section">
-                <div class="section-title">Skills</div>
-                <ul>
-                    <li>Python</li>
-                    <li>C++</li>
-                    <li>Machine Learning (Basics)</li>
-                    <li>Problem Solving</li>
-                    <li>Communication & Teamwork</li>
-                </ul>
-            </div>
-
-            <div class="section">
-                <div class="section-title">Languages</div>
-                <ul>
-                    <li>English (Professional Working Proficiency)</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="section">
-                <div class="section-title">Certificates</div>
-                <ul>
-                    <li>AI Fundamentals - Google</li>
-                    <li>CS50x - Harvard University</li>
-                    <li>OEC & ICMPD - Soft Skills Training</li>
-                </ul>
-            </div>
-
-            <div class="section">
-                <div class="section-title">Interests</div>
-                <ul>
-                    <li>Artificial Intelligence</li>
-                    <li>Automation</li>
-                    <li>Problem Solving</li>
-                    <li>Emerging Technologies</li>
-                </ul>
-            </div>
-        </div>
-
-    </div>
-
 </div>
 
 </body>
